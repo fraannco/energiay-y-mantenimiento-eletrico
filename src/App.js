@@ -1,4 +1,4 @@
-import InConstruction from './components/NavBar'
+import InConstruction from './components/InConstruction'
 
 function App() {
   return (
