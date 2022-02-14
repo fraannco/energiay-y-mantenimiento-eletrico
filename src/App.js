@@ -1,9 +1,9 @@
-import InConstruction from './components/InConstruction'
+import EYM_ROUTES from "./routes";
 
 function App() {
   return (
     <div className="App">
-      <InConstruction />
+      <EYM_ROUTES />
     </div>
   );
 }
