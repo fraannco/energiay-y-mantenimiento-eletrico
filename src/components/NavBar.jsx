@@ -19,13 +19,13 @@ const pages = ["Nosotros", "Contacto", "Revistas", "Productos"];
 
 const useStyles = makeStyles({
   logo: {
-    maxWidth: "8em",
+    maxWidth: "9em",
   },
 });
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
-  borderRadius: "16px",
+  borderRadius: "4px",
   border: "1px solid #E5E7EB",
   backgroundColor: "#F9FAFB",
   "&:hover": {
@@ -87,35 +87,41 @@ const NavBar = () => {
         boxShadow: "0px 0px 0px 0px",
         color: "black",
         backgroundColor: "white",
-        border: "1px solid #E5E7EB",
+        borderBottom: "1px solid #E5E7EB",
       }}
     >
       <Toolbar>
         {/* Logo principal en modo normal */}
-
-        <IconButton
+        <Box
           sx={{
-            borderRadius: "1px",
-            display: {
-              xs: "none",
-              md: "flex",
-              "&:hover": {
-                backgroundColor: "white",
-              },
-            },
-            padding: "0.5em",
+            flexGrow: { sm: "none", md: 1 },
+            display: { sm: "none", md: "flex" },
           }}
-          xs={6}
-          aria-label="logo-appbar"
-          aria-controls="logo-appbar"
-          href="/"
         >
-          <img
-            src="./images/ENERGIA-Y-MANTENIMIENTO-ELETRICO-LOGO-MODERNO.png"
-            alt="Logo energia sin texto"
-            className={classes.logo}
-          />
-        </IconButton>
+          <IconButton
+            sx={{
+              borderRadius: "1px",
+              display: {
+                xs: "none",
+                md: "flex",
+                "&:hover": {
+                  backgroundColor: "white",
+                },
+              },
+            }}
+            xs={6}
+            aria-label="logo-appbar"
+            aria-controls="logo-appbar"
+            href="/"
+          >
+            <img
+              src="./images/ENERGIA-Y-MANTENIMIENTO-ELETRICO-LOGO-MODERNO.png"
+              alt="Logo energia sin texto"
+              className={classes.logo}
+            />
+          </IconButton>
+        </Box>
+
         {/* Menu Responsive */}
         <Box
           sx={{
@@ -164,7 +170,7 @@ const NavBar = () => {
           sx={{
             flexGrow: 1,
             display: { xs: "none", md: "flex" },
-            justifyContent: "right",
+            justifyContent: "center",
           }}
         >
           {pages.map((page) => (
