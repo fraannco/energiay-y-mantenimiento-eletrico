@@ -36,7 +36,7 @@ const Intro = () => {
               Generación, Transmisión y Distribución de inversiones y proyectos.
             </Typography>
           </Grid>
-          <Grid item md={6} sm={12} xs={12} align="center" py={2}>
+          <Grid item md={6} sm={6} xs={12} align="center" py={2}>
             <Link
               rel="noopener noreferrer"
               href="https://www.facebook.com/energiaymantenimientoelectrico"
