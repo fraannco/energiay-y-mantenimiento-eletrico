@@ -21,10 +21,10 @@ const Intro = () => {
               variant="h4"
               fontWeight="bold"
               component="div"
-              sx={{ color: "#505050", maxWidth: "650px" }}
+              sx={{ color: "#505050", maxWidth: "700px" }}
             >
               Novedosa publicación peruana con enfoque al desarrollo y difusión
-              de investigaciones
+              de investigaciones y nuevas tecnologías.
             </Typography>
             <Typography
               variant="body2"
