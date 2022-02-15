@@ -1,9 +1,8 @@
 import {
   AppBar,
-  Button,
-  Container,
   IconButton,
   InputBase,
+  Link,
   Menu,
   MenuItem,
   Toolbar,
@@ -86,93 +85,99 @@ const NavBar = () => {
       }}
     >
       <Toolbar>
-{/*         <Container maxWidth="xl"> */}
-          {/* Logo principal en modo normal */}
-          <Box
+        {/*         <Container maxWidth="xl"> */}
+        {/* Logo principal en modo normal */}
+        <Box
+          sx={{
+            flexGrow: { sm: "none", md: 1 },
+            display: { sm: "none", md: "flex" },
+          }}
+        >
+          <IconButton
             sx={{
-              flexGrow: { sm: "none", md: 1 },
-              display: { sm: "none", md: "flex" },
-            }}
-          >
-            <IconButton
-              sx={{
-                borderRadius: "1px",
-                display: {
-                  xs: "none",
-                  md: "flex",
-                  "&:hover": {
-                    backgroundColor: "white",
-                  },
+              borderRadius: "1px",
+              display: {
+                xs: "none",
+                md: "flex",
+                "&:hover": {
+                  backgroundColor: "white",
                 },
-              }}
-              xs={6}
-              aria-label="logo-appbar"
-              aria-controls="logo-appbar"
-              href="/"
-            >
-              <img
-                src="./images/ENERGIA-Y-MANTENIMIENTO-ELETRICO-LOGO-MODERNO.png"
-                alt="Logo energia sin texto"
-                className={classes.logo}
-              />
-            </IconButton>
-          </Box>
-
-          {/* Menu Responsive */}
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
+              },
             }}
+            xs={6}
+            aria-label="logo-appbar"
+            aria-controls="logo-appbar"
+            href="/"
           >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-            >
-              <MenuIcon sx={{ color: "#111827" }} />
-            </IconButton>
+            <img
+              src="./images/ENERGIA-Y-MANTENIMIENTO-ELETRICO-LOGO-MODERNO.png"
+              alt="Logo energia sin texto"
+              className={classes.logo}
+            />
+          </IconButton>
+        </Box>
 
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+        {/* Menu Responsive */}
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: { xs: "flex", md: "none" },
+          }}
+        >
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+          >
+            <MenuIcon sx={{ color: "#111827" }} />
+          </IconButton>
 
-          {/* Opciones de la barra de navegación en modo normal */}
-          <Box
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorElNav}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "left",
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
             sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "center",
+              display: { xs: "block", md: "none" },
             }}
           >
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+              <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center" key={page}>
+                  {page}
+                </Typography>
+              </MenuItem>
+            ))}
+          </Menu>
+        </Box>
+
+        {/* Opciones de la barra de navegación en modo normal */}
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: { xs: "none", md: "flex" },
+            justifyContent: "center",
+          }}
+        >
+          {pages.map((page) => (
+            <Link
+              href={page}
+              sx={{ textDecoration: "none" }}
+              onClick={handleCloseNavMenu}
+              key={page}
+            >
+              <Typography
                 sx={{
                   my: 2,
                   mx: 2,
@@ -180,34 +185,37 @@ const NavBar = () => {
                   color: "#505050",
                   fontWeight: "medium",
                   "&:hover": {
-                    backgroundColor: "#f4f4f4",
+                    color: "#f97316",
                   },
                 }}
+                component="div"
+                variant="subtitle1"
               >
                 {page}
-              </Button>
-            ))}
-          </Box>
+              </Typography>
+            </Link>
+          ))}
+        </Box>
 
-          {/* Barra de busqueda */}
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { md: "flex" },
-              justifyContent: "right",
-            }}
-          >
-            <Search>
-              <SearchIconWrapper>
-                <SearchIcon />
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Buscar..."
-                inputProps={{ "aria-label": "search" }}
-              />
-            </Search>
-          </Box>
-{/*         </Container> */}
+        {/* Barra de busqueda */}
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: { md: "flex" },
+            justifyContent: "right",
+          }}
+        >
+          <Search>
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Buscar..."
+              inputProps={{ "aria-label": "search" }}
+            />
+          </Search>
+        </Box>
+        {/*         </Container> */}
       </Toolbar>
     </AppBar>
   );
