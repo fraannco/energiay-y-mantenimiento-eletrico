@@ -14,7 +14,8 @@ const logos = [
 
 const useStyles = makeStyles({
   imgLogo: {
-    height: "56px",
+    maxHeight: "56px",
+    maxWidth: "125px",
   },
 });
 
@@ -24,12 +25,7 @@ const Intro = () => {
   return (
     <Box bgcolor="white">
       <Container maxWidth="lg">
-        <Grid
-          container
-          justifyContent="center"
-          alignContent="center"
-          py={7}
-        >
+        <Grid container justifyContent="center" alignContent="center" py={7}>
           <Grid item md={12} sm={12} xs={12} align="center">
             <Typography
               color="secondary"
@@ -40,7 +36,11 @@ const Intro = () => {
             >
               Sobre nosotros
             </Typography>
-            <Typography variant="h2" component="div" sx={{ maxWidth: {md: "750px", xs: "100%"} }}>
+            <Typography
+              variant="h2"
+              component="div"
+              sx={{ maxWidth: { md: "750px", xs: "100%" } }}
+            >
               Novedosa publicación peruana con enfoque al desarrollo y difusión
               de investigaciones y nuevas tecnologías.
             </Typography>
@@ -77,14 +77,14 @@ const Intro = () => {
       </Container>
       <Container maxWidth="lg">
         <Box p={4}>
-          <Grid container alignContent="center" justifyContent="center">
+          <Grid container align="center" alignItems="center">
             {logos.map((logo, index) => (
-              <Grid item md={2} sm={4} p={1} key={index}>
-                <img
-                  src={logo}
-                  alt={`logo-${index}`}
-                  className={classes.imgLogo}
-                />
+              <Grid item md={2} sm={4} xs={6} key={index}>
+                  <img
+                    src={logo}
+                    alt={`logo-${index}`}
+                    className={classes.imgLogo}
+                  />
               </Grid>
             ))}
             <Grid item xs={12} align="center" pb={4} justify="center">
