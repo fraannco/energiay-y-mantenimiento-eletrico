@@ -28,11 +28,13 @@ const ObjetivoPrincipal = () => {
               exclusivo de los eventos que realiza como es el Congreso
               Internacional de Mantenimiento Eléctrico, Congreso de Trabajos con
               Tensión TCT PERÚ, Seminario Internacional de Prospectiva,
-              Innovación y Tecnología- INNOVATEC PERÚ, entre otros. Ya somos una
-              comunidad numerosa que la conforma entre ellos profesionales y
-              técnicos de las áreas de mantenimiento eléctrico, seguridad
-              eléctrica, proyectos eléctricos, trabajos en líneas energizadas,
-              etc.
+              Innovación y Tecnología- INNOVATEC PERÚ, entre otros.
+            </Typography>
+            <Typography variant="body1" my={1}>
+              Ya somos una comunidad numerosa que la conforma entre ellos
+              profesionales y técnicos de las áreas de mantenimiento eléctrico,
+              seguridad eléctrica, proyectos eléctricos, trabajos en líneas
+              energizadas, etc.
             </Typography>
             {objetivos.map((objetivo) => (
               <Box key={objetivo} sx={{ display: "flex" }}>
