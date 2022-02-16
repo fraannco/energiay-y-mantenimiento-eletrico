@@ -5,7 +5,7 @@ const AboutusData = () => {
         {
             image: "./images/about-us/avatars/prueba.png",
             name: "Samuel de Luque",
-            position: "Ceo of Sex",
+            position: "Generente general",
             desc: "Exercise addict and lifelong learner",
             links: [
                 { type: "whatsapp", url: "https://wa.me/51929311362" },
