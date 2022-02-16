@@ -5,7 +5,7 @@ import React from "react";
 
 const logos = [
   "./images/about-us/logos/logo-LOGYTEC.png",
-  "./images/about-us/logos/knipex-logo.png",
+  "./images/about-us/logos/logo-Energotec2.png",
   "./images/about-us/logos/logo-INGETROL.png",
   "./images/about-us/logos/logo-IFITSA.png",
   "./images/about-us/logos/logo-able.png",
