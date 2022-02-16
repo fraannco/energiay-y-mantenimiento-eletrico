@@ -85,7 +85,7 @@ const Intro = () => {
         <Box p={4}>
           <Grid container alignContent="center" justifyContent="center">
             {logos.map((logo, index) => (
-              <Grid item md={2} p={1}>
+              <Grid item md={2} sm={4} p={1}>
                 <img
                   src={logo}
                   alt={`logo-${index}`}
@@ -94,10 +94,13 @@ const Intro = () => {
                 />
               </Grid>
             ))}
+            <Grid item xs={12} align="center" justify="center">
             <Typography variant="body2" mt={2} sx={{maxWidth: "400px", color: "#707070"}} align="center">
               Destacadas empresas y marcas de prestigio nacional e internacional
               siempre presentes en lanzamientos de nuevos productos.
             </Typography>
+            </Grid>
+
           </Grid>
         </Box>
       </Container>
