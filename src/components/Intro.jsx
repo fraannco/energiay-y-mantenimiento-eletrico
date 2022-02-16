@@ -1,8 +1,25 @@
 import { Button, Container, Grid, Link, Typography } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 import React from "react";
 
+const logos = [
+  "./images/about-us/logos/logo-LOGYTEC.png",
+  "./images/about-us/logos/LOGO-KNIPEX.png",
+  "./images/about-us/logos/logo-INGETROL.png",
+  "./images/about-us/logos/logo-IFITSA.png",
+  "./images/about-us/logos/logo-able.png",
+];
+
+const useStyles = makeStyles({
+  imgLogo: {
+    height: "56px",
+  },
+});
+
 const Intro = () => {
+  const classes = useStyles();
+
   return (
     <Box bgcolor="white">
       <Container maxWidth="lg">
@@ -62,6 +79,22 @@ const Intro = () => {
             </Link>
           </Grid>
         </Grid>
+      </Container>
+      <Container maxWidth="lg">
+        <Box>
+          <Grid container algin="center" justifyContent="center">
+            {logos.map((logo, index) => (
+              <Grid item md={2} p={2}>
+                <img
+                  src={logo}
+                  alt={`logo-${index}`}
+                  key={index}
+                  className={classes.imgLogo}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       </Container>
     </Box>
   );
