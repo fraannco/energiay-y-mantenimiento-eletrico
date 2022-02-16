@@ -31,7 +31,7 @@ const Company = () => {
     <>
       <Box py={8}>
         <Container maxWidth="lg">
-          <Box px={4} py={2}>
+          <Box py={2}>
             <Typography variant="h5" color="secondary">
               Compañía
             </Typography>
@@ -41,10 +41,10 @@ const Company = () => {
             </Typography>
           </Box>
 
-          <Box pr={4}>
+          <Box>
             <Grid container>
               {miembros.map((miembro) => (
-                <Grid item md={3} sm={6} xs={12} pl={4} pt={2}>
+                <Grid item md={3} sm={6} xs={12} pt={2}>
                   <Paper variant="outlined" sx={{ padding: "20px" }}>
                     <Grid container>
                       <Grid item md={6} sm={4} xs={6}>

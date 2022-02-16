@@ -29,7 +29,6 @@ const Intro = () => {
           justifyContent="center"
           alignContent="center"
           py={7}
-          px={5}
         >
           <Grid item md={12} sm={12} xs={12} align="center">
             <Typography

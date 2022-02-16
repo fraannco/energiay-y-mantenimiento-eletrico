@@ -13,7 +13,7 @@ const ObjetivoPrincipal = () => {
   return (
     <Box bgcolor="#F9F9F9" py={5}>
       <Container>
-        <Grid container p={4}>
+        <Grid container>
           <Grid item md={7}>
             <Typography variant="h2">Nuestro objetivo principal</Typography>
             <Typography variant="body1" my={1}>
