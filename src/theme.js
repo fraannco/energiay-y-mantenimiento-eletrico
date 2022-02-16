@@ -13,6 +13,30 @@ const theme = createTheme({
     },
     typography: {
         fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+        h2: {
+            fontFamily: '"Raleway", "Helvetica", "Arial", sans-serif',
+            fontWeight: 800,
+            fontSize: '2rem',
+            color: '#303030'
+        },
+        h5: {
+            fontFamily: '"Open Sans", "Arial", sans-serif',
+            fontSize: '1.5rem',
+            fontWeight: 800,
+        },
+        h4: {
+            fontSize: '1.7rem',
+        },
+        body1: {
+            fontSize: '1rem',
+            fontFamily: '"IBM Plex Sans", "sans-serif"',
+            fontWeight: '300'
+        },
+        body2: {
+            fontFamily: '"IBM Plex Sans", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontWeight: '800',
+            color: "#505050",
+        },
     },
 });
 
