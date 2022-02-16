@@ -40,7 +40,7 @@ const Intro = () => {
             >
               Sobre nosotros
             </Typography>
-            <Typography variant="h2" component="div" sx={{ maxWidth: "750px" }}>
+            <Typography variant="h2" component="div" sx={{ maxWidth: {md: "750px", xs: "100%"} }}>
               Novedosa publicación peruana con enfoque al desarrollo y difusión
               de investigaciones y nuevas tecnologías.
             </Typography>
@@ -59,7 +59,6 @@ const Intro = () => {
               <Button
                 color="secondary"
                 variant="contained"
-                fullWidth
                 style={{
                   boxShadow: "0px 0px 0px 0px",
                   paddingLeft: "4em",
