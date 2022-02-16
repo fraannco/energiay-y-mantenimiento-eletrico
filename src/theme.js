@@ -15,7 +15,7 @@ const theme = createTheme({
         fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
         h2: {
             fontFamily: '"Raleway", "Helvetica", "Arial", sans-serif',
-            fontWeight: 800,
+            fontWeight: 700,
             fontSize: '2rem',
             color: '#303030'
         },
