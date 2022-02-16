@@ -22,7 +22,7 @@ const theme = createTheme({
         h5: {
             fontFamily: '"Open Sans", "Arial", sans-serif',
             fontSize: '1.5rem',
-            fontWeight: 800,
+            fontWeight: 600,
         },
         h4: {
             fontSize: '1.7rem',
@@ -30,7 +30,8 @@ const theme = createTheme({
         body1: {
             fontSize: '1rem',
             fontFamily: '"IBM Plex Sans", "sans-serif"',
-            fontWeight: '300'
+            fontWeight: '400',
+            color: 'rgb(62, 80, 96)'
         },
         body2: {
             fontFamily: '"IBM Plex Sans", "Roboto", "Helvetica", "Arial", sans-serif',
