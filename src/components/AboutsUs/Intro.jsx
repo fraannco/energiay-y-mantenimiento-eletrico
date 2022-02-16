@@ -79,7 +79,7 @@ const Intro = () => {
         <Box p={4}>
           <Grid container align="center" alignItems="center">
             {logos.map((logo, index) => (
-              <Grid item md={2} sm={4} xs={6} key={index}>
+              <Grid item md={2} sm={4} xs={6} key={index} py={2}>
                   <img
                     src={logo}
                     alt={`logo-${index}`}
