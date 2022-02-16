@@ -40,7 +40,7 @@ const Company = () => {
     <>
       <Box py={8}>
         <Container maxWidth="lg">
-          <Box p={4}>
+          <Box px={4} py={2}>
             <Typography variant="h5" color="secondary">
               Compañía
             </Typography>
