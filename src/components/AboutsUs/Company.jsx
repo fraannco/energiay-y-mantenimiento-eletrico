@@ -11,18 +11,9 @@ import {
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import React from "react";
+import AboutusData from "./AboutusData"
 
-const miembros = [
-  {
-    image: "./images/about-us/avatars/prueba.png",
-    name: "Samuel de Luque",
-    position: "Ceo of Sex",
-    desc: "Exercise addict and lifelong learner",
-    links: [
-      { type: "whatsapp", url: "https://wa.me/51929311362" },
-    ],
-  },
-];
+const {miembros} = AboutusData()
 
 const renderIcon = (type) => {
   switch (type) {
