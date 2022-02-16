@@ -9,6 +9,7 @@ const logos = [
   "./images/about-us/logos/logo-INGETROL.png",
   "./images/about-us/logos/logo-IFITSA.png",
   "./images/about-us/logos/logo-able.png",
+  "./images/about-us/logos/logo-Energotec.png"
 ];
 
 const useStyles = makeStyles({
@@ -84,7 +85,7 @@ const Intro = () => {
         <Box>
           <Grid container algin="center" justifyContent="center">
             {logos.map((logo, index) => (
-              <Grid item md={2} p={2}>
+              <Grid item md={2} p={1}>
                 <img
                   src={logo}
                   alt={`logo-${index}`}
