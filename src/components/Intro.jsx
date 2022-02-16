@@ -24,7 +24,7 @@ const Intro = () => {
   return (
     <Box bgcolor="white">
       <Container maxWidth="lg">
-        <Grid container justifyContent="center" alignContent="center" py={10}>
+        <Grid container justifyContent="center" alignContent="center" py={7} px={5}>
           <Grid item md={12} sm={12} xs={12} align="center">
             <Typography
               color="secondary"
@@ -75,14 +75,14 @@ const Intro = () => {
                   color: "white",
                 }}
               >
-                {"Visitanos en Facebook"}
+                {"Visitanos tambien en Facebook"}
               </Button>
             </Link>
           </Grid>
         </Grid>
       </Container>
       <Container maxWidth="lg">
-        <Box>
+        <Box p={4}>
           <Grid container alignContent="center" justifyContent="center">
             {logos.map((logo, index) => (
               <Grid item md={2} p={1}>
@@ -94,7 +94,7 @@ const Intro = () => {
                 />
               </Grid>
             ))}
-            <Typography variant="body2" mt={5} sx={{maxWidth: "400px"}} align="center">
+            <Typography variant="body2" mt={2} sx={{maxWidth: "400px", color: "#707070"}} align="center">
               Destacadas empresas y marcas de prestigio nacional e internacional
               siempre presentes en lanzamientos de nuevos productos.
             </Typography>
