@@ -53,8 +53,8 @@ const Intro = () => {
           <Grid item md={6} sm={6} xs={12} align="center" py={2}>
             <Link
               rel="noopener noreferrer"
-              href="https://www.facebook.com/energiaymantenimientoelectrico"
               target="_blank"
+              href="https://www.facebook.com/energiaymantenimientoelectrico"
               style={{ textDecoration: "none" }}
             >
               <Button
@@ -89,16 +89,15 @@ const Intro = () => {
                 />
               </Grid>
             ))}
-            <Grid item xs={12} align="center" justify="center">
+            <Grid item xs={12} align="center" pb={4} justify="center">
               <Typography
                 variant="body2"
                 mt={2}
                 sx={{ maxWidth: "400px", fontWeight: "300" }}
                 align="center"
               >
-                Destacadas empresas y marcas de prestigio nacional e
-                internacional siempre presentes en lanzamientos de nuevos
-                productos.
+                Estamos aliados con destacadas empresas y marcas de prestigio
+                nacional e internacional.
               </Typography>
             </Grid>
           </Grid>
