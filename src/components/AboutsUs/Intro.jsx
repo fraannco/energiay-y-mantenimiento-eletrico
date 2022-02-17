@@ -76,7 +76,7 @@ const Intro = () => {
         </Grid>
       </Container>
       <Container maxWidth="lg">
-        <Box  bgcolor="blue">
+        <Box  bgcolor="blue" p={2}>
           <Grid container align="center" alignItems="center">
             {logos.map((logo, index) => (
               <Grid item md={2} sm={4} xs={6} key={index} p={2} bgcolor="green">
