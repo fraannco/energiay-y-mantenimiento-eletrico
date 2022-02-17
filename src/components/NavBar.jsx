@@ -6,7 +6,7 @@ import {
   Link,
   Menu,
   MenuItem,
-  Toolbar,
+  Grid,
   Typography,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
@@ -80,30 +80,28 @@ const NavBar = () => {
       position="static"
       sx={{
         boxShadow: "0px 0px 0px 0px",
-        color: "black",
         backgroundColor: "white",
         borderBottom: "1px solid #E5E7EB",
       }}
     >
       <Container maxWidth="lg">
-        <Toolbar>
-          {/* Logo principal en modo normal */}
-          <Box
+        <Grid container>
+          <Grid
+            item
+            sm={1}
+            xs={4}
             sx={{
-              display: { sm: "none", md: "flex" },
+              borderRadius: "1px",
+              display: {
+                xs: "none",
+                md: "flex",
+                "&:hover": {
+                  backgroundColor: "white",
+                },
+              },
             }}
           >
             <IconButton
-              sx={{
-                borderRadius: "1px",
-                display: {
-                  xs: "none",
-                  md: "flex",
-                  "&:hover": {
-                    backgroundColor: "white",
-                  },
-                },
-              }}
               aria-label="logo-appbar"
               aria-controls="logo-appbar"
               href="/"
@@ -114,55 +112,10 @@ const NavBar = () => {
                 className={classes.logo}
               />
             </IconButton>
-          </Box>
-
-          {/* Menu Responsive */}
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-            }}
-          >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-            >
-              <MenuIcon sx={{ color: "#111827" }} />
-            </IconButton>
-
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" key={page}>
-                    {page}
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-
-          {/* Opciones de la barra de navegación en modo normal */}
-          <Box
+          </Grid>
+          <Grid
+            item
+            xs={5}
             sx={{
               display: { xs: "none", md: "flex" },
               justifyContent: "left",
@@ -193,27 +146,81 @@ const NavBar = () => {
                 </Typography>
               </Link>
             ))}
-          </Box>
+          </Grid>
 
-          {/* Barra de busqueda */}
-          <Box
+          <Grid
+            item
+            xs={2}
+            bgcolor="green"
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+            }}
+          >
+            <Box>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+              >
+                <MenuIcon sx={{ color: "#111827" }} />
+              </IconButton>
+
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                {pages.map((page) => (
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center" key={page}>
+                      {page}
+                    </Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+          </Grid>
+
+          <Grid
+            item
+            md={6}
+            xs={10}
             sx={{
               flexGrow: 1,
               display: { md: "flex" },
               justifyContent: "right",
             }}
+            alignItems="center"
           >
-            <Search>
-              <SearchIconWrapper>
-                <SearchIcon />
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Buscar..."
-                inputProps={{ "aria-label": "search" }}
-              />
-            </Search>
-          </Box>
-        </Toolbar>
+            <Box alignContent="center">
+              <Search>
+                <SearchIconWrapper>
+                  <SearchIcon />
+                </SearchIconWrapper>
+                <StyledInputBase
+                  placeholder="Buscar..."
+                  inputProps={{ "aria-label": "search" }}
+                />
+              </Search>
+            </Box>
+          </Grid>
+        </Grid>
       </Container>
     </AppBar>
   );
