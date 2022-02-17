@@ -85,7 +85,7 @@ const NavBar = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container>
+        <Grid container alignItems="center">
           <Grid
             item
             sm={1}
@@ -151,7 +151,6 @@ const NavBar = () => {
           <Grid
             item
             xs={2}
-            bgcolor="green"
             sx={{
               flexGrow: 1,
               display: { xs: "flex", md: "none" },
