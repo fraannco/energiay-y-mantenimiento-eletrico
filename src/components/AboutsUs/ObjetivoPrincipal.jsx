@@ -3,25 +3,31 @@ import CheckIcon from "@mui/icons-material/Check";
 import React from "react";
 
 const objetivos = [
-  "Información valiosa y de interés del sector.",
-  "Comercio Ferretero, dirigida a toda la comunidad de Ferreterías y proveedores.",
-  "V Congreso Internacional de Mantenimiento Eléctrico PERÚ 2022.",
-  "Nuevos modelos de  Tiendas  virtuales y Expo Ferias",
+  "Información valiosa de interés del sector.",
+  "Guía actualizada sobre Comercio Eléctrico e Industrial, proveedores productos y servicios.",
+  "Guía actualizada sobre Comercio Ferretero, tiendas, proveedores y productos.",
+  "Nuevos modelos de tiendas virtuales y Expo Ferias.",
+  "V Congreso Internacional de Mantenimiento Eléctrico Perú 2022.",
+  "III Congreso Internacional de Trabajos con Tensión-TcT PERÚ.",
+  "III Seminario Internacional de Prospectiva, Tecnología e Innovación-INNOVATEC PERÚ.",
+  "II Seminario Internacional de Eficiencia Energética Perú.",
+  "III Seminario Internacional de Petroquímica Perú.",
 ];
 
 const ObjetivoPrincipal = () => {
   return (
-    <Box bgcolor="#F9F9F9" py={5}>
+    <Box bgcolor="#F9F9F9" py={7}>
       <Container>
         <Grid container>
           <Grid item md={7}>
             <Typography variant="h2">Nuestro objetivo principal</Typography>
             <Typography variant="body1" my={1}>
               Buscamos brindar una excelente herramienta que les permita crecer
-              y aumentar las ventas y posicionar mejor sus negocios. Ya somos
-              una comunidad numerosa conformada por profesionales y técnicos de
-              las áreas de mantenimiento eléctrico, seguridad eléctrica,
-              proyectos eléctricos, trabajos en líneas energizadas, etc.
+              y aumentar las ventas y posicionar mejor los negocios. Ya somos
+              una comunidad numerosa conformada por profesionales y técnicos e
+              las áreas de operaciones y mantenimiento eléctrico, seguridad
+              eléctrica- jefaturas técnicas y técnicos de trabajos con tensión,
+              etc.
             </Typography>
             <Typography variant="body1" my={1}>
               Te ofrecemos lo siguiente de manera honesta:
