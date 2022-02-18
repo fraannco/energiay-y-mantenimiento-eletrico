@@ -44,9 +44,11 @@ const Intro = () => {
               Novedosa publicación peruana con enfoque al desarrollo y difusión
               de investigaciones y nuevas tecnologías.
             </Typography>
-            <Typography variant="body1" sx={{ maxWidth: "500px" }} py={1}>
+            <Typography variant="body1" sx={{ maxWidth: "650px" }} py={1}>
               Cubrimos mercados importantes del sector eléctrico como
-              Generación, Transmisión y Distribución de inversiones y proyectos.
+              generación, transmisión y distribución. Además, promueve el
+              desarrollo de las operaciones y mantenimiento eléctrico,
+              inversiones y proyectos.
             </Typography>
           </Grid>
           <Grid item md={6} sm={6} xs={12} align="center" py={2}>
@@ -80,11 +82,11 @@ const Intro = () => {
           <Grid container align="center" alignItems="center">
             {logos.map((logo, index) => (
               <Grid item md={2} sm={4} xs={6} key={index} p={2}>
-                  <img
-                    src={logo}
-                    alt={`logo-${index}`}
-                    className={classes.imgLogo}
-                  />
+                <img
+                  src={logo}
+                  alt={`logo-${index}`}
+                  className={classes.imgLogo}
+                />
               </Grid>
             ))}
             <Grid item xs={12} align="center" pb={4} justify="center">
@@ -94,8 +96,8 @@ const Intro = () => {
                 sx={{ maxWidth: "400px", fontWeight: "300" }}
                 align="center"
               >
-                Estamos aliados con destacadas empresas y marcas de prestigio
-                nacional e internacional.
+                Contamos con el apoyo de destacadas empresas y marcas de
+                prestigio nacional e internacional.
               </Typography>
             </Grid>
           </Grid>
