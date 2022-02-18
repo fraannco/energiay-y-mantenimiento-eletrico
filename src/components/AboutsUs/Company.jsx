@@ -11,9 +11,9 @@ import {
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import React from "react";
-import AboutusData from "./AboutusData"
+import AboutusData from "./AboutusData";
 
-const {miembros} = AboutusData()
+const { miembros } = AboutusData();
 
 const renderIcon = (type) => {
   switch (type) {
@@ -29,23 +29,39 @@ const renderIcon = (type) => {
 const Company = () => {
   return (
     <>
-      <Box py={8}>
+      <Box py={7}>
         <Container maxWidth="lg">
-          <Box py={2}>
+          <Box pb={3}>
             <Typography variant="h5" color="secondary">
               Compañía
             </Typography>
-            <Typography sx={{ maxWidth: { md: "500px" } }} variant="body1">
+            <Typography
+              sx={{ maxWidth: { md: "500px" } }}
+              variant="body1"
+              pt={1}
+            >
               Contamos con un equipo con alta experiencia y conocimiento del
               mercado para poder ofrecete los mejores productos y servicios.
             </Typography>
           </Box>
 
           <Box>
-            <Grid container>
+            <Grid
+              container
+              sx={{ width: "calc(100% + 20px)", marginLeft: "-20px" }}
+            >
               {miembros.map((miembro) => (
-                <Grid item md={3} sm={6} xs={12} pt={2}>
-                  <Paper variant="outlined" sx={{ padding: "20px" }}>
+                <Grid
+                  item
+                  md={3}
+                  sm={6}
+                  xs={12}
+                  sx={{ paddingLeft: "20px", paddingBottom: "2em" }}
+                >
+                  <Paper
+                    variant="outlined"
+                    sx={{ padding: "20px", height: "90%" }}
+                  >
                     <Grid container>
                       <Grid item md={6} sm={4} xs={6}>
                         <Avatar
@@ -69,19 +85,19 @@ const Company = () => {
                       >
                         <Box>
                           {miembro.links.map((link) => (
-                              <IconButton
-                                aria-label="logo-appbar"
-                                aria-controls="logo-appbar"
-                                href={`${link.url}`}
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                {renderIcon(link.type)}
-                              </IconButton>
+                            <IconButton
+                              aria-label="logo-appbar"
+                              aria-controls="logo-appbar"
+                              href={`${link.url}`}
+                              rel="noopener noreferrer"
+                              target="_blank"
+                            >
+                              {renderIcon(link.type)}
+                            </IconButton>
                           ))}
-                          </Box>
+                        </Box>
                       </Grid>
-                      <Grid item xs={12}pt={2}>
+                      <Grid item xs={12} pt={2}>
                         <Typography variant="body2">{miembro.name}</Typography>
                         <Typography variant="body1" sx={{ fontSize: "0.9rem" }}>
                           {miembro.position}
