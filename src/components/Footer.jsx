@@ -83,7 +83,7 @@ const Footer = () => {
                   alt="footer-logo"
                   className={classes.imgLogo}
                 />
-                <Typography variant="body2" sx={{ fontSize: "0.875rem" }}>
+                <Typography variant="body2" sx={{ fontSize: "0.875rem", py: 1 }}>
                   Crea su mejor anuncio y <br /> exponga su mejor tecnología.
                 </Typography>
                 <Typography variant="body1" sx={{ fontSize: "0.875rem" }}>
