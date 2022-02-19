@@ -5,10 +5,11 @@ const theme = createTheme({
         type: 'light',
         primary: {
             main: '#dd040b',
-            contrastText: 'rgba(255,255,255,0.87)',
+            contrastText: 'rgba(255,255,255)',
         },
         secondary: {
             main: '#f97316',
+            contrastText: 'rgba(255,255,255)',
         },
     },
     typography: {
@@ -34,6 +35,7 @@ const theme = createTheme({
             color: 'rgb(62, 80, 96)'
         },
         body2: {
+            fontSize: '0.875rem',
             fontFamily: '"IBM Plex Sans", "Roboto", "Helvetica", "Arial", sans-serif',
             fontWeight: '800',
             color: "#505050",
