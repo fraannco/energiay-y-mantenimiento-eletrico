@@ -57,6 +57,7 @@ const Company = () => {
                   sm={6}
                   xs={12}
                   sx={{ paddingLeft: "20px", paddingBottom: "2em" }}
+                  key={miembro.name}
                 >
                   <Paper
                     variant="outlined"
@@ -91,6 +92,7 @@ const Company = () => {
                               href={`${link.url}`}
                               rel="noopener noreferrer"
                               target="_blank"
+                              key={link}
                             >
                               {renderIcon(link.type)}
                             </IconButton>
