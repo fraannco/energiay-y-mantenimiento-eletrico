@@ -27,7 +27,7 @@ const footers = [
   },
   {
     title: "Productos",
-    description: ["Privacy policy", "Terms of use"],
+    description: ["Politica de privacidad", "Terminos de uso"],
   },
 ];
 
@@ -45,7 +45,7 @@ function Copyright(props) {
       color="text.secondary"
       align="center"
       {...props}
-      sx={{ textDecoration: "none", fontWeight: "300" }}
+      sx={{ textDecoration: "none", fontWeight: "300", paddingTop: "1rem" }}
     >
       {"Copyright © "}
       <Link
@@ -126,7 +126,7 @@ const Footer = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item md={6} xs={12} pt={4}>
+            <Grid item md={6} xs={12} pt={4} pb={2}>
               <Grid container spacing={4} justifyContent="space-evenly">
                 {footers.map((footer) => (
                   <Grid item xs={6} sm={3} key={footer.title}>
