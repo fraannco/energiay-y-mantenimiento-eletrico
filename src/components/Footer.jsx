@@ -1,36 +1,16 @@
 import {
   Box,
+  Button,
   Container,
+  Divider,
   GlobalStyles,
   Grid,
   Link,
+  TextField,
   Typography,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
-
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-      sx={{ textDecoration: "none", fontWeight: "300" }}
-    >
-      {"Copyright © "}
-      <Link
-        color="inherit"
-        href="https://mui.com/"
-        sx={{ textDecoration: "none", fontWeight: "300" }}
-      >
-        Energía & Mantenimiento Eléctrico S.A.C
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const footers = [
   {
@@ -58,6 +38,56 @@ const useStyles = makeStyles({
   },
 });
 
+function Copyright(props) {
+  return (
+    <Typography
+      variant="body2"
+      color="text.secondary"
+      align="center"
+      {...props}
+      sx={{ textDecoration: "none", fontWeight: "300" }}
+    >
+      {"Copyright © "}
+      <Link
+        color="inherit"
+        href="https://mui.com/"
+        sx={{ textDecoration: "none", fontWeight: "300" }}
+      >
+        Energía & Mantenimiento Eléctrico S.A.C
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
+  );
+}
+
+function Contact() {
+  return (
+    <Grid container pt={2} pb={5}>
+      <Grid item md={6}>
+        <Typography variant="h5">¡Suscríbase a nuestro boletín!</Typography>
+        <Typography variant="h6">Sin spam, garantizado.</Typography>
+        <ul>
+          <Typography>
+            Alertas de precio personalizadas de publicidad
+          </Typography>
+          <Typography>Novedades y ofertas</Typography>
+          <Typography>Eventos imperdibles</Typography>
+        </ul>
+
+      </Grid>
+      <Grid item md={6}>
+      <form style={{paddingRight: "1rem"}}>
+          <TextField fullWidth type="email" color="secondary" placeholder="Ingrese su correo" label="Ingrese su correo" sx={{marginBottom: "1rem"}}></TextField>
+          <Button fullWidth size="large" variant="contained" color="secondary">
+            SUSCRIBIRSE
+          </Button>
+        </form>
+      </Grid>
+    </Grid>
+  );
+}
+
 const Footer = () => {
   const classes = useStyles();
 
@@ -74,37 +104,29 @@ const Footer = () => {
       >
         <Container maxWidth="lg" component="footer">
           <Grid container py={2}>
-            <Grid item md={6} xs={12} pb={{ xs: 4 }}>
+            <Grid item xs={12}>
+              <Contact />
+              <Divider />
+            </Grid>
+            <Grid item md={6} xs={12} pb={{ xs: 4 }} pt={4}>
               <Box pr={10}>
                 <img
                   src="./logo512.png"
                   alt="footer-logo"
                   className={classes.imgLogo}
                 />
-                <Typography variant="body2" sx={{ fontSize: "0.875rem", py: 1 }}>
+                <Typography
+                  variant="body2"
+                  sx={{ fontSize: "0.875rem", py: 1 }}
+                >
                   Crea su mejor anuncio y <br /> exponga su mejor tecnología.
                 </Typography>
                 <Typography variant="body1" sx={{ fontSize: "0.875rem" }}>
                   energiaymantenimientoelect@gmail.com
                 </Typography>
-                {/*                 <form>
-                  <Grid container py={2}>
-                    <Grid item xs={8}>
-                      <TextField
-                        fullWidth
-                        sx={{ backgroundColor: "#E4E4E4" }}
-                      />
-                    </Grid>
-                    <Grid item xs={4}>
-                      <Button sx={{ width: "100%", height: "100%" }}>
-                        Suscribirse
-                      </Button>
-                    </Grid>
-                  </Grid>
-                </form> */}
               </Box>
             </Grid>
-            <Grid item md={6} xs={12}>
+            <Grid item md={6} xs={12} pt={4}>
               <Grid container spacing={4} justifyContent="space-evenly">
                 {footers.map((footer) => (
                   <Grid item xs={6} sm={3} key={footer.title}>
