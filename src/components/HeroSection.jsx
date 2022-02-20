@@ -14,9 +14,15 @@ const HeroSection = () => {
   return (
     <div>
       <Box>
-        <Box p={2} bgcolor="#FAFAFA">
-          Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero
-          in 45 BC
+        <Box
+          p={1.5}
+          bgcolor="#FAFAFA"
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
+          <Typography variant="body1" align="center">
+            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by
+            Cicero in 45 BC
+          </Typography>
         </Box>
         <Container sx={{ py: 8 }}>
           <Grid container alignItems="center">
