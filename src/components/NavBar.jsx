@@ -16,7 +16,13 @@ import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 
-const pages = ["Nosotros", "Contacto", "Revistas", "Productos"];
+const pages = [
+  { title: "Nosotros", link: "about" },
+  { title: "Contacto", link: "contact" },
+  { title: "Revistas", link: "revistas" },
+  { title: "Productos", link: "products" },
+  { title: "Eventos", link: "events" },
+];
 
 const useStyles = makeStyles({
   logo: {
@@ -123,10 +129,10 @@ const NavBar = () => {
           >
             {pages.map((page) => (
               <Link
-                href={page}
+                href={page.link}
                 sx={{ textDecoration: "none" }}
                 onClick={handleCloseNavMenu}
-                key={page}
+                key={page.title}
               >
                 <Typography
                   sx={{
@@ -142,7 +148,7 @@ const NavBar = () => {
                   component="div"
                   variant="subtitle2"
                 >
-                  {page}
+                  {page.title}
                 </Typography>
               </Link>
             ))}
@@ -186,10 +192,8 @@ const NavBar = () => {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center" key={page}>
-                      {page}
-                    </Typography>
+                  <MenuItem key={page.title} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page.title}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
