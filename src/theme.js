@@ -31,6 +31,12 @@ const theme = createTheme({
             fontSize: '1.5rem',
             fontWeight: 600,
         },
+        h6: {
+            fontFamily: '"Open Sans", "Arial", sans-serif',
+            fontSize: '1rem',
+            fontWeight: 600,
+            color: "#505050"
+        },
         h4: {
             fontSize: '1.7rem',
         },
