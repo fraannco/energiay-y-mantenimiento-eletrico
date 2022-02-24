@@ -1,5 +1,4 @@
-import { Button, Container, Grid, Link, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Button, Container, Box, Link, Typography } from "@mui/material";
 import React from "react";
 
 import "./style.css";
@@ -32,9 +31,9 @@ function Copyright(props) {
 const InConstruction = () => {
   return (
     <>
-      <div className="App" >
+      <div className="App">
         <header className="App-header">
-          <Container sx={{ padding: "2rem"}}>
+          <Container sx={{ padding: "2rem" }}>
             <img
               src="./LOGO REVISTA-E&ME-OK.svg"
               className="App-logo"
