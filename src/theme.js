@@ -17,7 +17,7 @@ const theme = createTheme({
         h1: {
             fontFamily: '"Raleway", "Helvetica", "Arial", sans-serif',
             fontWeight: 800,
-            fontSize: '2.75rem',
+            fontSize: '2rem',
             color: '#303030'
         },
         h2: {
@@ -47,7 +47,7 @@ const theme = createTheme({
             color: 'rgb(62, 80, 96)'
         },
         body2: {
-            fontSize: '0.875rem',
+            fontSize: '0.8rem',
             fontFamily: '"IBM Plex Sans", "Roboto", "Helvetica", "Arial", sans-serif',
             fontWeight: '800',
             color: "#505050",
