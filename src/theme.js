@@ -17,7 +17,7 @@ const theme = createTheme({
         h1: {
             fontFamily: '"Raleway", "Helvetica", "Arial", sans-serif',
             fontWeight: 800,
-            fontSize: '3rem',
+            fontSize: '2.75rem',
             color: '#303030'
         },
         h2: {
