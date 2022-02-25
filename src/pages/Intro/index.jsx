@@ -41,7 +41,7 @@ const IntroductionPage = () => {
       }}
     >
       <Container>
-        <Box>
+        <Box >
           <Grid container justifyContent="center">
             <Grid
               item
@@ -58,7 +58,7 @@ const IntroductionPage = () => {
                 alt="logo"
                 className="appLogo"
               />
-              <Box py={2}>
+              <Box pt={6}>
                 <Typography variant="h1">EN CONSTRUCCIÓN...</Typography>
                 <Typography variant="body1">
                   ¡Estaremos lanzando nuestro nuevo sitio muy pronto!
@@ -76,8 +76,6 @@ const IntroductionPage = () => {
                     variant="contained"
                     style={{
                       boxShadow: "0px 0px 0px 0px",
-                      paddingLeft: "4em",
-                      paddingRight: "4em",
                       paddingBlock: "1em",
                       borderRadius: "10px",
                       fontWeight: "bold",
