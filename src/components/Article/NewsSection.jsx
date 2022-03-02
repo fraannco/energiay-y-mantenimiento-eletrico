@@ -394,9 +394,9 @@ const NewsSection = () => {
                 container
                 sx={{ marginLeft: "-20px", width: "calc(100% + 20px)" }}
               >
-                {ArticlesData?.map((article) => (
-                  <Grid item xs={12} sm={6} md={4} py={1} sx={{ paddingLeft: "20px" }}>
-                    <ArticleMiniature title={article.title} img={article.image} resume={article.resume} category={article.category} key={article.title}/>
+                {ArticlesData?.map((article, index) => (
+                  <Grid item xs={12} sm={6} md={4} py={1} sx={{ paddingLeft: "20px" }} key={index}>
+                    <ArticleMiniature title={article.title} img={article.image} resume={article.resume} category={article.category}/>
                   </Grid>
                 ))}
               </Grid>
@@ -469,7 +469,7 @@ const NewsSection = () => {
                 elevation={0}
                 sx={{
                   width: "100%",
-                  height: "600px",
+                  height: "700px",
                   borderRadius: "0px",
                   backgroundColor: "#f97316",
                   color: "white",
