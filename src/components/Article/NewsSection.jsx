@@ -203,7 +203,7 @@ const ArticlesData = [
   {
     title: "Lorem Ipsum",
     resume:
-      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor. No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor. No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
+      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
     image: "/images/articles/article1.jpg",
     info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
@@ -367,7 +367,7 @@ const NewsSection = () => {
     <Box py={4}>
       <Container>
         <Grid container>
-          <Grid item xs={12} bgcolor="red">
+          <Grid item xs={12}>
             <Paper
               ref={publicdadRef1}
               sx={{
@@ -387,7 +387,7 @@ const NewsSection = () => {
               </Typography>
             </Paper>
           </Grid>
-          <Grid item md={9} xs={12} py={2}>
+          <Grid item md={9} xs={12} py={2} /* bgcolor="blue" */>
             <Typography variant="h6">Artículos</Typography>
             <Box>
               <Grid
@@ -395,7 +395,7 @@ const NewsSection = () => {
                 sx={{ marginLeft: "-20px", width: "calc(100% + 20px)" }}
               >
                 {ArticlesData?.map((article) => (
-                  <Grid item xs={4} py={1} sx={{ paddingLeft: "20px" }}>
+                  <Grid item xs={12} sm={6} md={4} py={1} sx={{ paddingLeft: "20px" }}>
                     <ArticleMiniature title={article.title} img={article.image} resume={article.resume} category={article.category} key={article.title}/>
                   </Grid>
                 ))}
@@ -408,6 +408,7 @@ const NewsSection = () => {
             xs={12}
             sx={{ paddingLeft: { md: "20px", xs: "0px" } }}
             py={2}
+            /* bgcolor="red" */
           >
             <Typography variant="h6">Ultimo evento</Typography>
             <Box py={1}>
@@ -421,7 +422,7 @@ const NewsSection = () => {
                   <img
                     src="/images/articles/article1.jpg"
                     alt="a"
-                    style={{ width: "100%", height: "100%px" }}
+                    style={{ width: "100%", height: "100%" }}
                     /* className={classes.articleImge} */
                   />
                   <Typography
