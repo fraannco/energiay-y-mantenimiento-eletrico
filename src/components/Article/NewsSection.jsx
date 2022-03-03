@@ -4,6 +4,7 @@ import ArticleMiniature from "./ArticleMiniature";
 const ArticlesData = [
   {
     title: "Lorem Ipsum",
+    link: "./article",
     resume:
       "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
@@ -26,72 +27,7 @@ const ArticlesData = [
   },
   {
     title: "Lorem Ipsum",
-    resume:
-      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
-    date: Date.now(),
-    image: "/images/articles/article1.jpg",
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
-      <br />
-    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
-      <br />
-    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
-      <br />
-    )} 
-      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
-        <br />
-      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
-      <br />
-    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
-      <br />
-    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Energia",
-  },
-  {
-    title: "Lorem Ipsum",
-    resume:
-      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
-    date: Date.now(),
-    image: "/images/articles/article1.jpg",
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
-      <br />
-    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
-      <br />
-    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
-      <br />
-    )} 
-      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
-        <br />
-      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
-      <br />
-    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
-      <br />
-    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Electricidad",
-  },
-  {
-    title: "Lorem Ipsum",
-    resume:
-      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
-    date: Date.now(),
-    image: "/images/articles/article1.jpg",
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
-      <br />
-    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
-      <br />
-    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
-      <br />
-    )} 
-      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
-        <br />
-      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
-      <br />
-    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
-      <br />
-    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Mineria",
-  },
-  {
-    title: "Lorem Ipsum",
+    link: "./article",
     resume:
       "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
@@ -114,72 +50,7 @@ const ArticlesData = [
   },
   {
     title: "Lorem Ipsum",
-    resume:
-      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
-    date: Date.now(),
-    image: "/images/articles/article1.jpg",
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
-      <br />
-    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
-      <br />
-    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
-      <br />
-    )} 
-      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
-        <br />
-      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
-      <br />
-    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
-      <br />
-    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Energia",
-  },
-  {
-    title: "Lorem Ipsum",
-    resume:
-      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
-    date: Date.now(),
-    image: "/images/articles/article1.jpg",
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
-      <br />
-    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
-      <br />
-    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
-      <br />
-    )} 
-      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
-        <br />
-      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
-      <br />
-    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
-      <br />
-    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Electricidad",
-  },
-  {
-    title: "Lorem Ipsum",
-    resume:
-      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
-    date: Date.now(),
-    image: "/images/articles/article1.jpg",
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
-      <br />
-    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
-      <br />
-    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
-      <br />
-    )} 
-      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
-        <br />
-      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
-      <br />
-    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
-      <br />
-    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Mineria",
-  },
-  {
-    title: "Lorem Ipsum",
+    link: "./article",
     resume:
       "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
@@ -202,6 +73,7 @@ const ArticlesData = [
   },
   {
     title: "Lorem Ipsum",
+    link: "./article",
     resume:
       "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
@@ -220,10 +92,11 @@ const ArticlesData = [
     )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
       <br />
     )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Energia",
+    category: "Actualidad",
   },
   {
     title: "Lorem Ipsum",
+    link: "./article",
     resume:
       "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
@@ -242,10 +115,11 @@ const ArticlesData = [
     )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
       <br />
     )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Electricidad",
+    category: "Actualidad",
   },
   {
     title: "Lorem Ipsum",
+    link: "./article",
     resume:
       "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
@@ -264,10 +138,11 @@ const ArticlesData = [
     )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
       <br />
     )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Mineria",
+    category: "Actualidad",
   },
   {
     title: "Lorem Ipsum",
+    link: "./article",
     resume:
       "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
@@ -286,10 +161,11 @@ const ArticlesData = [
     )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
       <br />
     )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Mineria",
+    category: "Actualidad",
   },
   {
     title: "Lorem Ipsum",
+    link: "./article",
     resume:
       "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
@@ -308,10 +184,11 @@ const ArticlesData = [
     )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
       <br />
     )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Mineria",
+    category: "Actualidad",
   },
   {
     title: "Lorem Ipsum",
+    link: "./article",
     resume:
       "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
     date: Date.now(),
@@ -330,7 +207,99 @@ const ArticlesData = [
     )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
       <br />
     )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
-    category: "Mineria",
+    category: "Actualidad",
+  },
+  {
+    title: "Lorem Ipsum",
+    link: "./article",
+    resume:
+      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
+    date: Date.now(),
+    image: "/images/articles/article1.jpg",
+    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
+      <br />
+    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
+      <br />
+    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
+      <br />
+    )} 
+      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
+        <br />
+      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
+      <br />
+    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
+      <br />
+    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
+    category: "Actualidad",
+  },
+  {
+    title: "Lorem Ipsum",
+    link: "./article",
+    resume:
+      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
+    date: Date.now(),
+    image: "/images/articles/article1.jpg",
+    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
+      <br />
+    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
+      <br />
+    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
+      <br />
+    )} 
+      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
+        <br />
+      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
+      <br />
+    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
+      <br />
+    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
+    category: "Actualidad",
+  },
+  {
+    title: "Lorem Ipsum",
+    link: "./article",
+    resume:
+      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
+    date: Date.now(),
+    image: "/images/articles/article1.jpg",
+    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
+      <br />
+    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
+      <br />
+    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
+      <br />
+    )} 
+      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
+        <br />
+      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
+      <br />
+    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
+      <br />
+    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
+    category: "Actualidad",
+  },
+  {
+    title: "Lorem Ipsum",
+    link: "./article",
+    resume:
+      "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor.",
+    date: Date.now(),
+    image: "/images/articles/article1.jpg",
+    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ultricies tortor, ac lobortis tortor. Nulla facilisi. Aliquam laoreet posuere tellus ut accumsan. Ut blandit nulla non scelerisque varius. Etiam accumsan tortor nisl, non aliquam dolor sodales vel. Vestibulum erat libero, gravida ac augue sit amet, tincidunt molestie tellus. Etiam hendrerit mi urna, a dignissim enim placerat vel. Phasellus turpis quam, pellentesque sit amet pharetra ultrices, venenatis id nisl. Sed tristique urna at tortor convallis, sit amet placerat ante tincidunt. Vestibulum et fermentum turpis, ac auctor velit. ${(
+      <br />
+    )} Nunc auctor porta diam, sit amet ornare lacus tincidunt et. Praesent varius purus lacinia, tincidunt ligula vel, ultricies sem. Aenean placerat erat eu nisl lacinia, ut vulputate risus imperdiet. Duis hendrerit gravida felis, vitae consequat lectus pellentesque non. Fusce tincidunt venenatis quam quis efficitur. Suspendisse hendrerit elit felis, vel varius velit euismod nec. Nullam ornare vestibulum hendrerit. Donec id convallis orci, vehicula dignissim urna. Suspendisse sed faucibus ex. Nulla sed sem augue. Fusce in sapien ipsum. Pellentesque gravida arcu eget nibh pharetra, id tristique tortor iaculis. Morbi porta sem vel lorem pharetra ultrices.${(
+      <br />
+    )} Sed et orci vitae neque luctus hendrerit. Nulla vitae consequat massa. Etiam blandit ipsum vel ex tempor, sed luctus tortor vestibulum. Aenean porttitor hendrerit lorem, et aliquam ante mollis ut. Vestibulum eget diam purus. Suspendisse scelerisque nibh leo, a suscipit mauris ultricies ac. Nullam gravida interdum libero eget venenatis. Integer tortor magna, lobortis eget urna et, vestibulum auctor quam.${(
+      <br />
+    )} 
+      Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc hendrerit erat nec maximus luctus. Mauris at erat rutrum odio gravida molestie vitae ac velit. Maecenas est mauris, placerat at laoreet quis, vulputate nec est. Mauris ac porta sapien, nec venenatis est. Mauris id accumsan ex, ut molestie sapien. Morbi consectetur sem ut nulla vehicula, sed venenatis nunc consectetur. Mauris elementum, massa et ultrices ornare, lectus tellus condimentum mi, at egestas tellus lorem id dolor. Vestibulum placerat faucibus nulla, quis congue nulla. Praesent ligula urna, sagittis et ante at, lobortis ultricies risus. Maecenas quis dui vitae risus consectetur ultricies. Quisque sed finibus tellus, vel eleifend ligula. Integer lacinia pellentesque magna ut semper.${(
+        <br />
+      )} Nulla gravida, tortor eget rhoncus pulvinar, velit ex laoreet turpis, et molestie risus tortor a tellus. In hac habitasse platea dictumst. Phasellus lacus tellus, lobortis in congue vitae, dictum finibus lorem. Aenean neque nulla, egestas at urna et, pretium finibus lorem. Fusce viverra felis eu ligula porttitor, in iaculis quam volutpat. Nulla scelerisque, neque a pretium efficitur, augue tortor sagittis nisl, nec aliquam sem justo non purus. Cras faucibus nunc vitae neque tincidunt lacinia. Integer varius sodales mollis. Ut nibh mi, condimentum sed enim accumsan, finibus condimentum orci. Pellentesque ante lectus, tristique sed orci eu, ullamcorper egestas justo. In posuere nec metus id vehicula.${(
+      <br />
+    )} Nam congue nisi quis sagittis vehicula. Morbi viverra dui sed quam ultrices, id ultricies nisl sodales. Nulla eu lorem gravida, tincidunt neque finibus, rutrum est. Nam eu facilisis nulla. Quisque turpis sapien, hendrerit sit amet ligula ac, eleifend malesuada mi. Nulla sodales nunc posuere dui ornare, quis condimentum sapien ultricies. Cras finibus massa quis commodo iaculis. Duis arcu turpis, hendrerit ut hendrerit quis, placerat eget odio. Sed a magna tincidunt tellus viverra tempus.${(
+      <br />
+    )} Quisque semper ullamcorper dapibus. Maecenas eget tristique felis. Ut volutpat erat a lorem vestibulum, ut suscipit sem consectetur. Quisque a augue lacinia lacus finibus semper a id tellus. Integer vitae tortor in odio consectetur eleifend. Fusce ullamcorper neque id bibendum tincidunt. In blandit consequat nibh, eget convallis est ornare vel. Nullam mollis hendrerit cursus. Curabitur ornare libero ut finibus consequat.`,
+    category: "Actualidad",
   },
 ];
 
@@ -373,7 +342,6 @@ const NewsSection = () => {
               sx={{
                 width: "100%",
                 height: "125px",
-                bgcolor: "red",
                 color: "white",
                 backgroundColor: "#f97316",
                 display: "flex",
@@ -396,7 +364,7 @@ const NewsSection = () => {
               >
                 {ArticlesData?.map((article, index) => (
                   <Grid item xs={12} sm={6} md={4} py={1} sx={{ paddingLeft: "20px" }} key={index}>
-                    <ArticleMiniature title={article.title} img={article.image} resume={article.resume} category={article.category}/>
+                    <ArticleMiniature title={article.title} img={article.image} resume={article.resume} category={article.category} link={article.link}/>
                   </Grid>
                 ))}
               </Grid>
