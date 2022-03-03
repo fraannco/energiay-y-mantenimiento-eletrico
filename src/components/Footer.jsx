@@ -122,7 +122,7 @@ const Footer = () => {
                   Crea su mejor anuncio y <br /> exponga su mejor tecnología.
                 </Typography>
                 <Typography variant="body1" sx={{ fontSize: "0.875rem" }}>
-                  energiaymantenimientoelect@gmail.com
+                  energiaymantenimientoelectrico@gmail.com
                 </Typography>
               </Box>
             </Grid>
