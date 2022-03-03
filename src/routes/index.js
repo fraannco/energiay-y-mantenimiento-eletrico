@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "../pages/About us";
 import PricingContent from "../components/prueba"
 import HomePage from "../pages/Homepage";
+import Article from "../pages/Article/Article";
 
 const EYM_ROUTES = () => {
   return (
@@ -11,6 +12,7 @@ const EYM_ROUTES = () => {
         <Route path="/*" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/prueba" element={<PricingContent />} />
+        <Route path="/article" element={<Article />} />
       </Routes>
     </BrowserRouter>
   );
