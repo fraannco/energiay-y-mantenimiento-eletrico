@@ -1,4 +1,4 @@
-import { Box, Button, Link, Paper, Typography } from "@mui/material";
+import { Box, Link, Paper, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import React from "react";
 
@@ -10,13 +10,13 @@ const useStyles = makeStyles({
   },
 });
 
-const ArticleMiniature = ({ title, img, resume, category }) => {
+const ArticleMiniature = ({ title, img, resume, category, link }) => {
   const classes = useStyles();
 
   return (
     <Paper sx={{ borderRadius: "0px", boxShadow: "0px 0px 0px" }}>
       <a
-        href="/nose"
+        href={link}
         style={{
           textDecoration: "none",
         }}
