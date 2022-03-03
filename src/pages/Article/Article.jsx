@@ -8,13 +8,12 @@ const useStyles = makeStyles({
     height: "450px",
     objectFit: "cover",
     paddingTop: "0.5rem",
-    paddingBottom: "0.5rem"
-  }
-})
+    paddingBottom: "0.5rem",
+  },
+});
 
 const Article = () => {
-
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <Box>
@@ -33,16 +32,27 @@ const Article = () => {
               <Typography variant="body2" pt={1}>
                 20 octubre 2021
               </Typography>
-              <img src="/images/articles/article1.jpg" alt="" className={classes.articleImg}/>
+              <img
+                src="/images/articles/article1.jpg"
+                alt=""
+                className={classes.articleImg}
+              />
               <Box py={1}>
-              <Paper elevation={0} sx={{bgcolor: "#f97316", height: "75px", backgroundColor: "#f97316",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",}}>
-                <Typography color="white" variant="h6">
-                  PUBLICIDAD
-                </Typography>
-              </Paper>
+                <Paper
+                  elevation={0}
+                  sx={{
+                    bgcolor: "#f97316",
+                    height: "75px",
+                    backgroundColor: "#f97316",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <Typography color="white" variant="h6">
+                    PUBLICIDAD
+                  </Typography>
+                </Paper>
               </Box>
               <Typography>
                 Un total de 749.8 millones de dólares pagaron al Estado peruano
@@ -82,7 +92,45 @@ const Article = () => {
                 por la reactivación de la economía mundial y nacional.
               </Typography>
             </Grid>
-            <Grid item md={4}></Grid>
+            <Grid item md={4} xs={12} pl={{ md: 5 }} pt={{ xs: 4, md: 0 }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  bgcolor: "#f97316",
+                  height: "300px",
+                  backgroundColor: "#f97316",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Typography color="white" variant="h6">
+                  PUBLICIDAD
+                </Typography>
+              </Paper>
+              <Box pt={2}>
+                <Typography variant="h4">CONTACTO</Typography>
+                <Typography variant="body1" py={2}>
+                  Para contactos de publicidad o cualquier otra consulta, por
+                  favor contáctese con:
+                </Typography>
+                <Box
+                  p={4}
+                  alignItems="center"
+                  justifyContent="center"
+                  display="flex"
+                >
+                  <img
+                    src="/images/about-us/avatars/miembro1.png"
+                    alt=""
+                    style={{ borderRadius: "50%", height: "250px" }}
+                  />
+                </Box>
+                <Typography variant="body1">Juan José Silva Ramos</Typography>
+                <Typography variant="body1">jjsilvaperu@gmail.com</Typography>
+                <Typography variant="body1">+51 929 311 362</Typography>
+              </Box>
+            </Grid>
           </Grid>
         </Box>
       </Container>
