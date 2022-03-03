@@ -1,15 +1,27 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Paper, Typography } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import React from "react";
-import NavBar from "../../components/NavBar";
+
+const useStyles = makeStyles({
+  articleImg: {
+    width: "100%",
+    height: "450px",
+    objectFit: "cover",
+    paddingTop: "0.5rem",
+    paddingBottom: "0.5rem"
+  }
+})
 
 const Article = () => {
+
+  const classes = useStyles()
+
   return (
     <Box>
-      <NavBar />
       <Container>
-        <Box mt={10}>
+        <Box my={8}>
           <Grid container>
-            <Grid item md={8}>
+            <Grid item md={8} xs={12}>
               <Typography variant="h1" sx={{ textTransform: "uppercase" }}>
                 SNMPE: empresas del sector hidrocarburos pagaron us$ 749.8
                 millones de regalías al estado de enero a setiembre 2021
@@ -21,6 +33,17 @@ const Article = () => {
               <Typography variant="body2" pt={1}>
                 20 octubre 2021
               </Typography>
+              <img src="/images/articles/article1.jpg" alt="" className={classes.articleImg}/>
+              <Box py={1}>
+              <Paper elevation={0} sx={{bgcolor: "#f97316", height: "75px", backgroundColor: "#f97316",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",}}>
+                <Typography color="white" variant="h6">
+                  PUBLICIDAD
+                </Typography>
+              </Paper>
+              </Box>
               <Typography>
                 Un total de 749.8 millones de dólares pagaron al Estado peruano
                 las empresas que trabajan en el sector hidrocarburos por
