@@ -24,7 +24,7 @@ const miembros = [
     image: "./images/about-us/avatars/miembro2.jpg",
     name: "Marco Antonio Córdova",
     position: "Generente de administración y finanzas",
-    desc: "Adicto a los grandes retos",
+    desc: "Forjador de la rentabilidad segura",
     links: [{ type: "whatsapp", url: "https://wa.me/51929311362" }],
   },
   {

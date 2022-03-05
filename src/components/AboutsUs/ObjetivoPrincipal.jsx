@@ -12,6 +12,7 @@ const objetivos = [
   "III Seminario Internacional de Prospectiva, Tecnología e Innovación-INNOVATEC PERÚ.",
   "II Seminario Internacional de Eficiencia Energética Perú.",
   "III Seminario Internacional de Petroquímica Perú.",
+  "I Convención Eléctrica Perú- AT, MT y BT.",
 ];
 
 const ObjetivoPrincipal = () => {
@@ -26,8 +27,8 @@ const ObjetivoPrincipal = () => {
               y aumentar las ventas y posicionar mejor los negocios. Ya somos
               una comunidad numerosa conformada por profesionales y técnicos e
               las áreas de operaciones y mantenimiento eléctrico, seguridad
-              eléctrica- jefaturas técnicas y técnicos de trabajos con tensión,
-              etc.
+              eléctrica, automatización, control y procesos – jefaturas técnicas
+              y técnicos de trabajos con tensión, etc.
             </Typography>
             <Typography variant="body1" my={1}>
               Te ofrecemos lo siguiente de manera honesta:

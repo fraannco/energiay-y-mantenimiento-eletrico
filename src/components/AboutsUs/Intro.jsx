@@ -48,7 +48,7 @@ const Intro = () => {
               Cubrimos mercados importantes del sector eléctrico como
               generación, transmisión y distribución. Además, promueve el
               desarrollo de las operaciones y mantenimiento eléctrico,
-              inversiones y proyectos.
+              inversiones y proyectos del sector industrial.
             </Typography>
           </Grid>
           <Grid item md={6} sm={6} xs={12} align="center" py={2}>
