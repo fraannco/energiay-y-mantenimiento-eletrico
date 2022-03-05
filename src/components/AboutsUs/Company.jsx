@@ -52,7 +52,7 @@ const miembros = [
     image: "./images/about-us/avatars/miembro6.png",
     name: "Franklin Tamayo Ordaya",
     position: "Comité de Trabajos con Tensión (TcT)",
-    desc: "Forjador de futuros forjadores en TcT",
+    desc: "Forjador de futuros emprendedores en TcT",
     links: [{ type: "whatsapp", url: "https://wa.me/51929311362" }],
   },
 ];
